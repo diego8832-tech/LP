@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site, whatsappLink } from "@/lib/site";
 
@@ -11,70 +12,86 @@ const areas = [
 export default function HomePage() {
   return (
     <>
-      <section className="border-b border-ink/10">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:py-28 grid gap-10 md:grid-cols-12 md:items-end">
-          <div className="md:col-span-8">
-            <p className="eyebrow">Advocacia Criminal · {site.city}</p>
-            <h1 className="serif text-4xl sm:text-5xl md:text-6xl leading-[1.05] mt-5">
-              Defesa técnica em
-              <br />
-              matéria criminal,
-              <br />
-              <span className="text-bordo">com discrição e rigor.</span>
-            </h1>
-            <p className="mt-7 text-base sm:text-lg text-mute max-w-prose">
-              Atuação personalizada em todas as fases da persecução penal — do
-              inquérito ao tribunal do júri e à execução da pena. Atendimento
-              presencial em {site.city} e remoto em todo o território nacional.
-            </p>
-
-            <div className="mt-9 flex flex-col sm:flex-row gap-3">
-              <a
-                href={whatsappLink(
-                  "Olá, gostaria de agendar uma consulta com o Dr. Diego."
-                )}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-ink text-paper px-6 py-3 text-sm tracking-wide hover:bg-bordo transition-colors"
-              >
-                Falar pelo WhatsApp
-              </a>
-              <Link
-                href="/areas-de-atuacao"
-                className="inline-flex items-center justify-center border border-ink/20 px-6 py-3 text-sm tracking-wide hover:border-ink transition-colors"
-              >
-                Áreas de atuação
-              </Link>
-            </div>
+      <section className="bg-ink text-paper">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24 lg:py-28 text-center">
+          <div className="mx-auto w-[220px] sm:w-[280px] lg:w-[320px]">
+            <Image
+              src="/logo-dark.png"
+              alt={`${site.fullName} — logotipo`}
+              width={2600}
+              height={2000}
+              priority
+              sizes="(min-width: 1024px) 320px, (min-width: 640px) 280px, 220px"
+              className="w-full h-auto"
+            />
           </div>
 
-          <aside className="md:col-span-4 md:pl-6 md:border-l md:border-ink/10">
-            <p className="eyebrow">Atendimento</p>
-            <ul className="mt-4 space-y-3 text-sm">
-              <li>
-                <span className="block text-mute">Plantão 24h</span>
-                <a
-                  href={whatsappLink()}
-                  className="serif text-xl hover:text-bordo"
-                >
-                  {site.whatsappDisplay}
-                </a>
-              </li>
-              <li>
-                <span className="block text-mute">E-mail</span>
-                <a
-                  href={`mailto:${site.email}`}
-                  className="break-all hover:text-bordo"
-                >
-                  {site.email}
-                </a>
-              </li>
-              <li>
-                <span className="block text-mute">Inscrição</span>
-                <span>{site.oab}</span>
-              </li>
-            </ul>
-          </aside>
+          <p className="text-[0.72rem] uppercase tracking-wider2 text-paper/55 mt-10">
+            Advocacia Criminal · {site.city}
+          </p>
+
+          <h1 className="serif text-3xl sm:text-4xl lg:text-5xl leading-[1.15] mt-5 max-w-3xl mx-auto">
+            Defesa técnica em matéria criminal,{" "}
+            <span className="text-gold">com discrição e rigor.</span>
+          </h1>
+
+          <p className="mt-7 text-base sm:text-lg text-paper/75 max-w-prose mx-auto leading-relaxed">
+            Atuação personalizada em todas as fases da persecução penal — do
+            inquérito ao trânsito em julgado e à execução da pena. Atendimento
+            presencial em {site.city} e remoto em todo o território nacional.
+          </p>
+
+          <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href={whatsappLink(
+                "Olá, gostaria de agendar uma consulta com o Dr. Diego."
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-bordo text-paper px-7 py-3 text-sm tracking-wide hover:bg-bordo-soft transition-colors"
+            >
+              Falar pelo WhatsApp
+            </a>
+            <Link
+              href="/areas-de-atuacao"
+              className="inline-flex items-center justify-center border border-paper/25 text-paper px-7 py-3 text-sm tracking-wide hover:border-paper hover:bg-paper/5 transition-colors"
+            >
+              Áreas de atuação
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-ink/10 bg-paper">
+        <div className="mx-auto max-w-6xl px-5 py-7 grid gap-5 sm:grid-cols-3 text-sm">
+          <div className="text-center sm:text-left">
+            <span className="block text-mute text-xs uppercase tracking-wider2">
+              Plantão 24h
+            </span>
+            <a
+              href={whatsappLink()}
+              className="serif text-lg hover:text-bordo"
+            >
+              {site.whatsappDisplay}
+            </a>
+          </div>
+          <div className="text-center sm:text-left">
+            <span className="block text-mute text-xs uppercase tracking-wider2">
+              E-mail
+            </span>
+            <a
+              href={`mailto:${site.email}`}
+              className="hover:text-bordo break-all"
+            >
+              {site.email}
+            </a>
+          </div>
+          <div className="text-center sm:text-left">
+            <span className="block text-mute text-xs uppercase tracking-wider2">
+              Inscrição
+            </span>
+            <span>{site.oab}</span>
+          </div>
         </div>
       </section>
 
@@ -94,9 +111,11 @@ export default function HomePage() {
               instância recursal.
             </p>
             <p>
-              Trabalho de forma artesanal, com poucos casos simultâneos, para
-              que cada cliente receba acompanhamento direto e estratégia
-              construída sobre as particularidades do seu processo.
+              O acompanhamento é direto e individualizado, com volume de
+              causas deliberadamente restrito, de modo a preservar a
+              profundidade da análise técnica e a construção de uma
+              estratégia processual ajustada às particularidades de cada
+              caso.
             </p>
             <p>
               <Link
