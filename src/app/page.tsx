@@ -111,9 +111,11 @@ export default function HomePage() {
               instância recursal.
             </p>
             <p>
-              Trabalho de forma artesanal, com poucos casos simultâneos, para
-              que cada cliente receba acompanhamento direto e estratégia
-              construída sobre as particularidades do seu processo.
+              O acompanhamento é direto e individualizado, com volume de
+              causas deliberadamente restrito, de modo a preservar a
+              profundidade da análise técnica e a construção de uma
+              estratégia processual ajustada às particularidades de cada
+              caso.
             </p>
             <p>
               <Link
