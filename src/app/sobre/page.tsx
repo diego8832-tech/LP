@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -27,7 +28,17 @@ export default function SobrePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-16 grid gap-12 md:grid-cols-12">
-        <aside className="md:col-span-4">
+        <aside className="md:col-span-4 space-y-6">
+          <figure className="relative w-full aspect-[3/4] overflow-hidden bg-ink/5">
+            <Image
+              src="/diego-oliveira.png"
+              alt={`Retrato profissional de ${site.name}`}
+              fill
+              sizes="(min-width: 768px) 33vw, 100vw"
+              className="object-cover"
+              priority
+            />
+          </figure>
           <div className="border border-ink/10 p-6 space-y-4 text-sm">
             <div>
               <p className="eyebrow">Inscrição</p>

@@ -22,6 +22,11 @@ const config: Config = {
           soft: "#8a2a36",
           dark: "#4d161e",
         },
+        gold: {
+          DEFAULT: "#c9a96b",
+          soft: "#d9bd83",
+          dark: "#a88748",
+        },
       },
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "Cambria", "Times New Roman", "serif"],
