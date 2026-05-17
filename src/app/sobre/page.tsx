@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Sobre",
   description:
-    "Trajetória, formação e experiência profissional do advogado Diego de Oliveira, dedicado ao Direito Penal.",
+    "Quase uma década dedicada à defesa criminal. Atuação técnica em tráfico de drogas, organização criminosa e execução penal estratégica.",
   alternates: { canonical: "/sobre" },
 };
 
@@ -16,8 +16,13 @@ export default function SobrePage() {
         <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
           <p className="eyebrow">Sobre o profissional</p>
           <h1 className="serif text-4xl sm:text-5xl mt-4 max-w-3xl leading-tight">
-            Atuação dedicada ao Direito Penal, com método e discrição.
+            Quase uma década dedicada à defesa criminal.
           </h1>
+          <p className="serif text-xl sm:text-2xl text-mute mt-6 max-w-3xl leading-snug">
+            Atuação técnica em tráfico de drogas, organização criminosa e
+            execução penal estratégica — construída sobre a análise rigorosa
+            da prova e a leitura constitucional do caso concreto.
+          </p>
         </div>
       </section>
 
@@ -41,82 +46,43 @@ export default function SobrePage() {
         </aside>
 
         <div className="md:col-span-8 space-y-12">
-          <article className="space-y-4 max-w-prose">
-            <p className="eyebrow">Apresentação</p>
-            <h2 className="serif text-3xl leading-tight">
-              {site.name}
-            </h2>
-            <p className="text-ink/80 leading-relaxed">
-              {/* PLACEHOLDER — substituir pela apresentação institucional */}
-              Apresentação biográfica do profissional. Descrever em parágrafo
-              curto a abordagem do escritório, o foco em Direito Penal e a
-              forma de trabalho — sempre sem promessas de resultado, sem
-              comparações e sem captação indevida de clientela.
-            </p>
-            <p className="text-ink/80 leading-relaxed">
-              {/* PLACEHOLDER — segundo parágrafo de apresentação */}
-              Texto opcional complementando a forma de atendimento, postura
-              ética e princípios de trabalho.
-            </p>
-          </article>
+          <article className="space-y-5 max-w-prose text-ink/85 leading-relaxed">
+            <p className="eyebrow !text-mute">Trajetória</p>
 
-          <article className="space-y-4 max-w-prose">
-            <p className="eyebrow">Formação acadêmica</p>
-            <ul className="space-y-3">
-              <li className="border-l-2 border-bordo pl-4">
-                <p className="serif text-xl leading-tight">
-                  {/* PLACEHOLDER */} Bacharelado em Direito
-                </p>
-                <p className="text-sm text-mute">
-                  {/* PLACEHOLDER */} Instituição — Ano de conclusão
-                </p>
-              </li>
-              <li className="border-l-2 border-ink/15 pl-4">
-                <p className="serif text-xl leading-tight">
-                  {/* PLACEHOLDER */} Pós-graduação / Especialização
-                </p>
-                <p className="text-sm text-mute">
-                  {/* PLACEHOLDER */} Área — Instituição — Ano
-                </p>
-              </li>
-              <li className="border-l-2 border-ink/15 pl-4">
-                <p className="serif text-xl leading-tight">
-                  {/* PLACEHOLDER */} Cursos e atualizações relevantes
-                </p>
-                <p className="text-sm text-mute">
-                  {/* PLACEHOLDER */} Detalhar conforme necessário.
-                </p>
-              </li>
-            </ul>
-          </article>
+            <p>
+              Diego de Oliveira atua há quase uma década na advocacia
+              criminal, com inscrição na Ordem dos Advogados do Brasil,
+              Seccional do Paraná, sob o nº 88.326. A formação jurídica,
+              construída desde a graduação em Direito, entendeu desde cedo
+              que o estudo é a base inegociável de qualquer defesa séria —
+              convicção que se mantém como pilar da prática profissional,
+              traduzida em atualização permanente sobre a jurisprudência
+              consolidada do STF e do STJ e em diálogo constante com a
+              doutrina contemporânea.
+            </p>
 
-          <article className="space-y-4 max-w-prose">
-            <p className="eyebrow">Experiência profissional</p>
-            <ul className="space-y-6">
-              <li>
-                <p className="serif text-xl leading-tight">
-                  {/* PLACEHOLDER */} Experiência relevante 1
-                </p>
-                <p className="text-sm text-mute mt-1">
-                  {/* PLACEHOLDER */} Período — Função
-                </p>
-                <p className="text-ink/80 mt-2">
-                  {/* PLACEHOLDER */} Breve descrição da atuação, mantendo a
-                  linguagem técnica e sóbria, sem juízos de valor.
-                </p>
-              </li>
-              <li>
-                <p className="serif text-xl leading-tight">
-                  {/* PLACEHOLDER */} Experiência relevante 2
-                </p>
-                <p className="text-sm text-mute mt-1">
-                  {/* PLACEHOLDER */} Período — Função
-                </p>
-                <p className="text-ink/80 mt-2">
-                  {/* PLACEHOLDER */} Breve descrição.
-                </p>
-              </li>
-            </ul>
+            <p>
+              A atuação concentra-se em causas envolvendo tráfico de drogas,
+              associação ao tráfico, organização criminosa e execução penal
+              estratégica — áreas em que a leitura técnica da prova, a
+              fundamentação rigorosa e a precisão argumentativa são
+              determinantes. Cada defesa é construída a partir da análise
+              individualizada do caso concreto, com atenção especial aos
+              pontos em que a acusação opera por presunção, generalização ou
+              estereótipo, e onde a defesa pode atacar com base em
+              jurisprudência consolidada e construção doutrinária
+              consistente.
+            </p>
+
+            <p>
+              O compromisso com a defesa criminal vai além da técnica
+              processual. Significa acompanhar o caso em todas as suas
+              fases — da investigação à execução —, preservar o que foi
+              conquistado na sentença favorável, atacar pelas vias adequadas
+              o que foi imposto indevidamente, e garantir que cada cliente
+              tenha acesso a uma defesa construída com o mesmo rigor que se
+              exigiria em qualquer instância do sistema de justiça.
+            </p>
           </article>
 
           <article className="space-y-4 max-w-prose">

@@ -2,11 +2,10 @@ import Link from "next/link";
 import { site, whatsappLink } from "@/lib/site";
 
 const areas = [
-  "Tribunal do Júri",
-  "Audiência de Custódia",
-  "Prisão em Flagrante",
-  "Crimes de Trânsito",
-  "Execução Penal",
+  "Direito Penal e Processo Penal",
+  "Tráfico de Drogas e Associação ao Tráfico",
+  "Organização Criminosa",
+  "Execução Penal Estratégica",
 ];
 
 export default function HomePage() {
@@ -152,10 +151,11 @@ export default function HomePage() {
           <div>
             <p className="eyebrow">Atendimento urgente</p>
             <h2 className="serif text-2xl sm:text-3xl mt-2">
-              Prisão em flagrante ou audiência de custódia?
+              Situação criminal urgente?
             </h2>
             <p className="text-mute mt-2 max-w-xl">
-              Para situações urgentes, o atendimento é direto, a qualquer
+              Para prisão em flagrante, condução coercitiva ou demais
+              urgências criminais, o atendimento é direto, a qualquer
               horário.
             </p>
           </div>

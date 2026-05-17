@@ -5,50 +5,42 @@ import { whatsappLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Áreas de Atuação",
   description:
-    "Atuação técnica em Tribunal do Júri, audiência de custódia, prisão em flagrante, crimes de trânsito e execução penal.",
+    "Atuação técnica em Direito Penal e Processo Penal, tráfico de drogas e associação ao tráfico, organização criminosa e execução penal estratégica.",
   alternates: { canonical: "/areas-de-atuacao" },
 };
 
 const areas = [
   {
-    slug: "tribunal-do-juri",
-    title: "Tribunal do Júri",
+    slug: "direito-penal-e-processo-penal",
+    title: "Direito Penal e Processo Penal",
     summary:
-      "Defesa em processos de competência do Tribunal do Júri, da fase de pronúncia ao plenário.",
+      "Defesa técnica em inquéritos policiais, ações penais e recursos.",
     description:
-      "Atuação em todas as etapas do procedimento bifásico — sumário de culpa, pronúncia, preparação do plenário e sustentação oral perante o Conselho de Sentença — com elaboração de teses de defesa fundadas no acervo probatório dos autos.",
+      "Atuação que se estende da fase investigativa ao trânsito em julgado, com leitura crítica do testemunho policial, controle rigoroso da licitude da prova e análise individualizada de cada elemento que compõe a imputação.",
   },
   {
-    slug: "audiencia-de-custodia",
-    title: "Audiência de Custódia",
+    slug: "trafico-de-drogas",
+    title: "Tráfico de Drogas e Associação ao Tráfico",
     summary:
-      "Acompanhamento da pessoa presa em até 24 horas após a prisão, perante a autoridade judicial.",
+      "Atuação consolidada em causas envolvendo a Lei nº 11.343/06.",
     description:
-      "Defesa técnica voltada ao controle de legalidade da prisão, análise de excessos, requerimento de relaxamento, liberdade provisória ou medidas cautelares diversas, conforme as circunstâncias do caso concreto.",
+      "Teses de tráfico privilegiado (§4º do art. 33), descaracterização da associação (art. 35) por ausência de vínculo estável e permanente, controle do bis in idem na dosimetria (Tema 712 do STF) e proporcionalidade do regime e do confisco. Atenção especial à crítica da prova telemática — cadeia de custódia, perícia de voz e contextualização integral de diálogos.",
   },
   {
-    slug: "prisao-em-flagrante",
-    title: "Prisão em Flagrante",
+    slug: "organizacao-criminosa",
+    title: "Organização Criminosa",
     summary:
-      "Atendimento imediato em situações de prisão em flagrante, com plantão 24 horas.",
+      "Defesa em ações fundadas na Lei nº 12.850/13.",
     description:
-      "Orientação à pessoa presa e aos familiares, acompanhamento na lavratura do auto, análise dos requisitos legais do flagrante e medidas cabíveis perante a autoridade policial e judicial.",
-  },
-  {
-    slug: "crimes-de-transito",
-    title: "Crimes de Trânsito",
-    summary:
-      "Defesa em delitos previstos no Código de Trânsito Brasileiro.",
-    description:
-      "Atuação em casos de embriaguez ao volante, lesão corporal culposa, homicídio culposo na direção de veículo automotor, racha e demais condutas tipificadas no CTB, com análise probatória e técnica das circunstâncias.",
+      "Análise rigorosa dos elementos estruturais do tipo — estabilidade, permanência, divisão funcional de tarefas e hierarquia — distinguindo a atuação isolada e o concurso eventual de agentes da efetiva integração em organização criminosa.",
   },
   {
     slug: "execucao-penal",
-    title: "Execução Penal",
+    title: "Execução Penal Estratégica",
     summary:
-      "Acompanhamento de pessoas em cumprimento de pena privativa de liberdade.",
+      "Progressão de regime, livramento condicional, indulto, comutação, remição, conversão de penas e demais incidentes da execução.",
     description:
-      "Requerimento de progressão de regime, livramento condicional, remição pelo trabalho ou estudo, comutação, indulto e demais incidentes da execução penal, perante a Vara de Execuções competente.",
+      "Atuação fundada na premissa de que a coisa julgada favorável ao apenado é direito subjetivo a ser preservado — em particular nas hipóteses do Tema Repetitivo 1106 do STJ, que veda a unificação automática de penas restritivas supervenientes.",
   },
 ];
 
@@ -61,9 +53,8 @@ export default function AreasPage() {
           <h1 className="serif text-4xl sm:text-5xl mt-4 max-w-3xl leading-tight">
             Áreas de atuação
           </h1>
-          <p className="mt-6 text-mute max-w-prose">
-            Atuação exclusiva em matéria criminal, em todas as fases da
-            persecução penal e em todas as instâncias.
+          <p className="serif text-xl sm:text-2xl text-mute mt-6 max-w-3xl leading-snug">
+            Especialização que se constrói caso a caso.
           </p>
         </div>
       </section>
