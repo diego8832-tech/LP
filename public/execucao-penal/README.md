@@ -2,7 +2,12 @@
 
 Landing page estática (HTML/CSS/JS) com foco em **Execução Penal** no Paraná, parte do escritório **Diego Oliveira — Advocacia e Consultoria Criminal**.
 
-> Este projeto convive no mesmo repositório do site institucional Next.js (raiz), mas é independente: pode ser publicado isoladamente como deploy estático.
+Servida como conteúdo estático pelo projeto Next.js da raiz: o Vercel publica esta pasta automaticamente em `/execucao-penal/` no mesmo deploy.
+
+## URL no deploy
+
+- Preview: `<URL-do-preview-Vercel>/execucao-penal/`
+- Produção: `<dominio-final>/execucao-penal/`
 
 ## Stack
 - HTML5 semântico
